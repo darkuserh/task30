@@ -1,18 +1,5 @@
-let values = [10, 20, 48, 6, 11, 9, 125, 1, 8, 0, 3, 255, 77, 11, 170, 4, 28];
-let avgValues;
-let sum = 0;
-let arr = [];
 
-for (let i = 0; i < values.length; i++) {
-  let value = values[i];
-  
-  avgValues = value / 16;
-  sum += avgValues;
-  console.log(sum);
+let values = [10, 20, 4, 6, 11, 9, 125, 10, 8, 0, 3, 5, 89, 12, 46, 77, 3];
+Array.from(new Set(values))
 
-  if (value > sum) {
-    arr.push(value);
-  }
-}
-
-console.log(arr);
+console.log([new Set(values)])
