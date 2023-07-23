@@ -1,9 +1,13 @@
-let values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
-
+let values = [-1, -5, -6, -3, -10, -5, 3, 4, -1, -8, 1, -10, 3];
+let positiv=[];
 for(let i=0;i<values.length;i++){
-    if(values[i]<0){
-    values[i]=Number(String(values[i]).split('-')[0]);
+    let value=values[i];
+    
+    if(value > 0){
+   
+     positiv.push(value);
     
     }
+  
 }
-console.log(values);
+console.log(positiv[0]);
