@@ -1,32 +1,18 @@
+let values = [10, 20, 48, 6, 11, 9, 125, 1, 8, 0, 3, 255, 77, 11, 170, 4, 28];
+let avgValues;
+let sum = 0;
+let arr = [];
 
-let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
-let oddValues = [];
-let evenValues = [];
-let oddValuesPosition = 0;
-let evenValuesPosition = 0;
+for (let i = 0; i < values.length; i++) {
+  let value = values[i];
+  
+  avgValues = value / 16;
+  sum += avgValues;
+  console.log(sum);
 
-for (let value of values)
-{
-    if (value % 2 == 0)
-    {
-        evenValues.push(value) ;
-       
-    }
-    else
-    {
-        oddValues.push(value);
-     
-    }
+  if (value > sum) {
+    arr.push(value);
+  }
 }
 
-console.log("Непарні значення");
-for (let oddVal of oddValues)
-{
-    console.log(oddVal);
-}
-
-console.log("Парні значення");
-for (let evenVal of evenValues)
-{
-    console.log(evenVal);
-}
+console.log(arr);
