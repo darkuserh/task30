@@ -1,6 +1,18 @@
-let values = [10, 20, 4, 6, 11, 9, 125, 1, 8, 0, 3];
-let temp;
-temp= values[6];
-values[6]= values[9]
-values[9]=temp;
-console.log(values)
+let values = [];
+let sum=0;
+while(true){
+ let input=prompt('Введіть дане число')
+ if(input === 'exit') break;
+ let value = Number(input)
+ if(isNaN(value)){
+    alert('Please enter')
+ }else{
+    values.push(value)
+ }
+  sum=0;
+ for(let i=0; i<values.length; i++){
+sum+=values[i] 
+}
+ 
+} 
+alert('Дані значення сумуються'+sum)   
