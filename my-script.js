@@ -1,12 +1,6 @@
-function avg(a, b, c){
-    if( a === undefined || b === undefined ){
-        return;
-    }
-     if( c === undefined){
-        return a + b / 2;
-    }else{
-        return a + b + c / 3;
-    }
+let values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
+for( i=0;i<values.length;i++){
+ let value=values.filter((i)=>{return i>=0})
+ console.log(value);
+  
 }
-let res=avg(2,4,5)
-console.log(res)
