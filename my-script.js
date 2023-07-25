@@ -1,9 +1,14 @@
+function test(value){
 
-let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+if(value<1){
+  return;
+}
+console.log(value);
 
-console.log('Парні значення')
-values.filter(values=>values%2==0).forEach(values=>console.log(values))
-console.log('Непарні значення')
-values.filter(values=>values%2!=0).forEach(values=>console.log(values))
+test(value-1);
 
 
+}
+
+
+test(+prompt('Введіть число ',0))
