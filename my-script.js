@@ -1,10 +1,9 @@
 
-var data = [1, 2, 3, 4, 5];
+let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
 
-var result = data.map( (value)=> {
-    return value * value;
-});
+console.log('Парні значення')
+values.filter(values=>values%2==0).forEach(values=>console.log(values))
+console.log('Непарні значення')
+values.filter(values=>values%2!=0).forEach(values=>console.log(values))
 
-result.forEach((e)=> {
-    console.log(e);
-});
+
