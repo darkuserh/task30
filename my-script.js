@@ -1,17 +1,19 @@
 
-        // массив створено за допомогою https://jsonplaceholder.typicode.com/users
-        // всі властивості в об'єктах, які знаходяться в массиві, взяті в "". Такий формат даних
-        let user={
-            firstname: "Yuriy",
-            user2:{
-            secondname: "Vysotskyi",    
-            },
-       
+function createUser(firstName, lastName) {
+return{
+    firstName,
+    lastName,
+    print()
+    {
+        console.log(`Ваше ім'я ${firstName} ,ваше прізвище ${lastName}`)
+    }
+ 
+}
+}
 
-      
-        print: function (){
-           console.log(this.firstname + " "+ this.user2.secondname )
-        } 
-    };
-    user.print();
+let obj1=createUser('John','Smith')
+let obj2=createUser('Yura','Vysotskiy')
+
+obj1.print();
+obj2.print();
 
